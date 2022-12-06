@@ -3,6 +3,8 @@ import 'package:flutter_cep/models/endereco_model.dart';
 import 'package:flutter_cep/repositories/cep_repository.dart';
 import 'package:flutter_cep/repositories/cep_repository_impl.dart';
 
+import '../widgets/custom_text_form_field.dart';
+
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
@@ -35,14 +37,8 @@ class _HomePageState extends State<HomePage> {
           key: formKey,
           child: Column(
             children: [
-              TextFormField(
+              CustomTextFormField(
                 controller: cepEC,
-                validator: (value) {
-                  if (value == null || value.isEmpty) {
-                    return 'CEP obrigatório';
-                  }
-                  return null;
-                },
               ),
               ElevatedButton(
                 onPressed: () async {
