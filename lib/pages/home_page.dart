@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_cep/models/endereco_model.dart';
 import 'package:flutter_cep/repositories/cep_repository.dart';
 import 'package:flutter_cep/repositories/cep_repository_impl.dart';
+import 'package:flutter_cep/widgets/custom_elevated_button.dart';
 
 import '../widgets/custom_text_form_field.dart';
 
@@ -40,7 +41,8 @@ class _HomePageState extends State<HomePage> {
               CustomTextFormField(
                 controller: cepEC,
               ),
-              ElevatedButton(
+              CustomElevatedButton(
+                text: 'Buscar',
                 onPressed: () async {
                   final valid = formKey.currentState?.validate() ?? false;
                   if (valid) {
@@ -66,7 +68,7 @@ class _HomePageState extends State<HomePage> {
                     }
                   }
                 },
-                child: const Text('Buscar'),
+                loading: loading,
               ),
               Visibility(
                 visible: loading,
