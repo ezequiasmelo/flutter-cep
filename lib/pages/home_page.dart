@@ -40,6 +40,7 @@ class _HomePageState extends State<HomePage> {
             children: [
               CustomTextFormField(
                 controller: cepEC,
+                hintText: 'Informe o CEP',
               ),
               CustomElevatedButton(
                 text: 'Buscar',
