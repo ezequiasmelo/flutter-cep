@@ -24,9 +24,13 @@ repository patterns
 ## packages
 
 - [Dio](https://pub.dev/packages/dio)
+- [Bloc](https://pub.dev/packages/bloc)
+- [Flutter Bloc](https://pub.dev/packages/flutter_bloc)
 
 ## extensions vscode
 
     Flutter & Dart Utilities
 
     Dart Data Class Generator
+
+    bloc
