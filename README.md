@@ -23,7 +23,7 @@ repository patterns
 
 ## packages
 
-    https://pub.dev/packages/dio
+- [Dio](https://pub.dev/packages/dio)
 
 ## extensions vscode
 
