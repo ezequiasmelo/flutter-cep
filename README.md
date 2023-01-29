@@ -19,14 +19,22 @@ repository patterns
 
 ## commands
 
-    flutter create --project-name flutter-cep --platforms web ./flutter-cep
+    flutter create --project-name flutter-cep --platforms web, android ./flutter-cep
+
+    flutter pub run build_runner watch - d
 
 ## packages
 
 - [Dio](https://pub.dev/packages/dio)
+- [Dio](https://pub.dev/packages/dio)
+- [Bloc](https://pub.dev/packages/bloc)
+- [Flutter Bloc](https://pub.dev/packages/flutter_bloc)
+- [Match](https://pub.dev/packages/match)
 
 ## extensions vscode
 
     Flutter & Dart Utilities
 
     Dart Data Class Generator
+
+    bloc
