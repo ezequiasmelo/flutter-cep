@@ -1,4 +1,3 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
 
 import 'package:flutter_cep/constants/app_colors.dart';
@@ -6,11 +5,13 @@ import 'package:flutter_cep/constants/app_colors.dart';
 class CustomTextFormField extends StatefulWidget {
   final TextEditingController? controller;
   final String? hintText;
+  final FormFieldValidator? validator;
 
   const CustomTextFormField({
     Key? key,
     this.controller,
     this.hintText,
+    this.validator,
   }) : super(key: key);
 
   @override
@@ -33,12 +34,7 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
       ),
       child: TextFormField(
         controller: widget.controller,
-        validator: (value) {
-          if (value == null || value.isEmpty) {
-            return 'CEP obrigatório';
-          }
-          return null;
-        },
+        validator: widget.validator,
         keyboardType: TextInputType.number,
         decoration: InputDecoration(
           errorMaxLines: 3,

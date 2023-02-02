@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_cep/pages/home_controller.dart';
 import 'package:flutter_cep/pages/home_state.dart';
 import 'package:flutter_cep/widgets/custom_elevated_button.dart';
+import 'package:validatorless/validatorless.dart';
 
 import '../widgets/custom_text_form_field.dart';
 
@@ -52,6 +53,7 @@ class _HomePageState extends State<HomePage> {
                 CustomTextFormField(
                   controller: cepEC,
                   hintText: 'Informe o CEP',
+                  validator: Validatorless.required('O campo CEP é necessário'),
                 ),
                 BlocBuilder<HomeController, HomeState>(
                   bloc: homeController,

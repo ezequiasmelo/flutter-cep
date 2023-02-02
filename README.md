@@ -25,16 +25,15 @@ repository patterns
 
 ## packages
 
-- [Dio](https://pub.dev/packages/dio)
-- [Dio](https://pub.dev/packages/dio)
-- [Bloc](https://pub.dev/packages/bloc)
-- [Flutter Bloc](https://pub.dev/packages/flutter_bloc)
-- [Match](https://pub.dev/packages/match)
+- [dio](https://pub.dev/packages/dio)
+- [bloc](https://pub.dev/packages/bloc)
+- [flutter_b_loc](https://pub.dev/packages/flutter_bloc)
+- [match](https://pub.dev/packages/match)
+- [valitorless](https://pub.dev/packages/validatorless)
 
-## extensions vscode
-
-    Flutter & Dart Utilities
-
-    Dart Data Class Generator
-
-    bloc
+## screens
+<br>
+<div align="center">
+    <img src="screens/Screenshot_1675261318.png" width="160"/>
+    <img src="screens/Screenshot_1675261321.png" width="160"/>
+</div>
