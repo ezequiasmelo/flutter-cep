@@ -16,6 +16,7 @@ dependencies:
   flutter_bloc: ^8.1.1
   match: ^0.4.1
   validatorless: ^1.2.3
+  mask_text_input_formatter: ^2.4.0
 
 dev_dependencies:
   flutter_test:

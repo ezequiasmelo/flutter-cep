@@ -30,10 +30,13 @@ repository patterns
 - [flutter_b_loc](https://pub.dev/packages/flutter_bloc)
 - [match](https://pub.dev/packages/match)
 - [valitorless](https://pub.dev/packages/validatorless)
+- [mask_text_input_formatter](https://pub.dev/packages/mask_text_input_formatter)
 
 ## screens
+
 <br>
 <div align="center">
-    <img src="screens/Screenshot_1675261318.png" width="160"/>
-    <img src="screens/Screenshot_1675261321.png" width="160"/>
+    <img src="screens/Screenshot_1675365675.png" width="160"/>
+    <img src="screens/Screenshot_1675366375.png" width="160"/>
+    <img src="screens/Screenshot_1675366364.png" width="160"/>
 </div>

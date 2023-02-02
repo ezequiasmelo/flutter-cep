@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:flutter_cep/constants/app_colors.dart';
+import 'package:mask_text_input_formatter/mask_text_input_formatter.dart';
 
 class CustomTextFormField extends StatefulWidget {
   final TextEditingController? controller;
@@ -35,6 +36,13 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
       child: TextFormField(
         controller: widget.controller,
         validator: widget.validator,
+        inputFormatters: [
+          MaskTextInputFormatter(
+            mask: '#####-###',
+            filter: {'#': RegExp(r'[0-9xX]')},
+            type: MaskAutoCompletionType.lazy,
+          )
+        ],
         keyboardType: TextInputType.number,
         decoration: InputDecoration(
           errorMaxLines: 3,
