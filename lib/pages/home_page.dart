@@ -6,6 +6,7 @@ import 'package:flutter_cep/widgets/custom_elevated_button.dart';
 import 'package:validatorless/validatorless.dart';
 
 import '../widgets/custom_text_form_field.dart';
+import 'widgets/rich_text_custom.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -74,8 +75,21 @@ class _HomePageState extends State<HomePage> {
                   bloc: homeController,
                   builder: (context, state) {
                     if (state.homeStatus == HomeStatus.loaded) {
-                      return Text(
-                        '${state.enderecoModel?.logradouro} ${state.enderecoModel?.complemento} ${state.enderecoModel?.cep}',
+                      return Column(
+                        children: [
+                          RichTextCustom(
+                            text1: 'Rua: ',
+                            text2: state.enderecoModel!.logradouro,
+                          ),
+                          RichTextCustom(
+                            text1: 'Bairro: ',
+                            text2: state.enderecoModel!.bairro,
+                          ),
+                          RichTextCustom(
+                            text1: 'Complemento: ',
+                            text2: state.enderecoModel!.complemento,
+                          ),
+                        ],
                       );
                     }
                     return const SizedBox.shrink();
