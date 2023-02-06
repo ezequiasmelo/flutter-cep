@@ -5,12 +5,16 @@ class EnderecoModel {
   final String logradouro;
   final String bairro;
   final String complemento;
+  final String localidade;
+  final String uf;
 
   EnderecoModel({
     required this.cep,
     required this.logradouro,
     required this.bairro,
     required this.complemento,
+    required this.localidade,
+    required this.uf,
   });
 
   Map<String, dynamic> toMap() {
@@ -19,6 +23,8 @@ class EnderecoModel {
       'logradouro': logradouro,
       'bairro': bairro,
       'complemento': complemento,
+      'localidade': localidade,
+      'uf': uf,
     };
   }
 
@@ -28,6 +34,8 @@ class EnderecoModel {
       logradouro: map['logradouro'] ?? '',
       bairro: map['bairro'] ?? '',
       complemento: map['complemento'] ?? '',
+      localidade: map['localidade'] ?? '',
+      uf: map['uf'] ?? '',
     );
   }
 

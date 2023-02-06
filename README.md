@@ -37,6 +37,6 @@ repository patterns
 <br>
 <div align="center">
     <img src="screens/Screenshot_1675365675.png" width="160"/>
-    <img src="screens/Screenshot_1675366375.png" width="160"/>
+    <img src="screens/Screenshot_1675694462.png" width="160"/>
     <img src="screens/Screenshot_1675366364.png" width="160"/>
 </div>

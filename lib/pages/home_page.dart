@@ -89,6 +89,14 @@ class _HomePageState extends State<HomePage> {
                             text1: 'Complemento: ',
                             text2: state.enderecoModel!.complemento,
                           ),
+                          RichTextCustom(
+                            text1: 'Cidade: ',
+                            text2: state.enderecoModel!.localidade,
+                          ),
+                          RichTextCustom(
+                            text1: 'Estado: ',
+                            text2: state.enderecoModel!.uf,
+                          ),
                         ],
                       );
                     }
